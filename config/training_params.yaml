@@ -1,0 +1,9 @@
+HybridGait-v0:
+  mode: "train" # Set to 'train' when training, set to 'test' when running on pretrained model
+  model_file: "models/model_93500_steps.zip" # Model path for the 'test' mode
+  timesteps_per_actorbatch: 512 # Number of data points aggregated for one traning batch
+  optim_batchsize: 128 # Batch size of the neural network
+  output_dir: "models" # The directory where the models are saved
+  num_train_episodes: 1000000000 # Training episodes
+  num_test_episodes: 10000 # Testing episodes
+  int_save_freq: 500 # Specifies how often the model will be saved.
