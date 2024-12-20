@@ -37,3 +37,9 @@ The `visualization` should be set to `False` when the display needs to be disabl
 
 The `terrain` option specifies the terrain the robot will walk on. The two options are `plane` and `hybrid`.
 
+# References
+
+1. https://github.com/mit-biomimetics/Cheetah-Software
+2. https://dspace.mit.edu/bitstream/handle/1721.1/138000/convex_mpc_2fix.pdf
+3. https://github.com/Derek-TH-Wang/quadruped_ctrl
+4. https://github.com/Derek-TH-Wang/hybrid_gait
