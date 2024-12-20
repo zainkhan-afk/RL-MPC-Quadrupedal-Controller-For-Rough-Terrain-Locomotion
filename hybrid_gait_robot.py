@@ -141,7 +141,8 @@ class HybridGaitRobot(object):
 
     def init_simulator(self):
         if self.visualization:
-            p.connect(p.GUI, options = "--mp4=output/movie.mp4 --mp4fps=60")  # or p.DIRECT for non-graphical version
+            # p.connect(p.GUI, options = "--mp4=output/movie.mp4 --mp4fps=60")  # or p.DIRECT for non-graphical version
+            p.connect(p.GUI)  # or p.DIRECT for non-graphical version
             p.configureDebugVisualizer(p.COV_ENABLE_GUI,0)
 
         else:
@@ -240,7 +241,7 @@ class HybridGaitRobot(object):
         
 
         p.changeDynamics(self.ground, -1, lateralFriction=self.lateralFriction)
-        self.quadruped = p.loadURDF("hybrid_gait/quadruped_ctrl/model//mini_cheetah.urdf", self.init_pos,
+        self.quadruped = p.loadURDF("quadruped_ctrl/model//mini_cheetah.urdf", self.init_pos,
                                     useFixedBase=False)
         p.changeDynamics(self.quadruped, 3, lateralFriction=self.lateralFriction, 
                          spinningFriction=self.spinningFriction)

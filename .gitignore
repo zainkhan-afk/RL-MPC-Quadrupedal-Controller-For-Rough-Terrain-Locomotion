@@ -1,3 +1,8 @@
+###################### Custom ######################
+models/
+output/
+
+
 ###################### Python ignore ######################
 
 # Byte-compiled / optimized / DLL files
