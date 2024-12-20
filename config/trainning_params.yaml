@@ -1,5 +1,5 @@
 HybridGait-v0:
-  mode: "test"
+  mode: "train"
   model_file: ""
   model_file: "models/model_30000_steps.zip"
   model_file: "models/model_93500_steps.zip"
@@ -8,5 +8,5 @@ HybridGait-v0:
   output_dir: "models"
   num_train_episodes: 1000000000 # train times
   num_test_episodes: 10000 # test times
-  int_save_freq: 500 # specifies the frequency for saving intermediate policies every n policy steps.
+  int_save_freq: 5 # specifies the frequency for saving intermediate policies every n policy steps.
 

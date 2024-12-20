@@ -290,17 +290,9 @@ class HybridGaitRobot(object):
             x = i%W
             y = i // W
             z_val = height_map[i][3][2]
-            # print(height_map[i][3])
             img[0, y, x] = z_val
 
-        # print(img.min(), img.max())
         img = (img.max() - img) / (img.max() - img.min())
-        # img = img.astype("uint8")
-
-        # img = cv2.resize(img, (400, 400))
-        # cv2.imshow("img", cv2.resize(img.reshape((40,40)), (200, 200)))
-        # cv2.waitKey(1)
-
         return img
 
 
