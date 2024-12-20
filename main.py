@@ -114,6 +114,12 @@ def test(agent, env, num_procs, num_episodes=None):
 
 
 def main():
+    if not os.path.exists("output"):
+        os.mkdir("output")
+
+    if not os.path.exists("models"):
+        os.mkdir("models")
+
     arg_parser = argparse.ArgumentParser()
     arg_parser.add_argument("--task", dest="task",
                             type=str, default="HybridGait-v0")
